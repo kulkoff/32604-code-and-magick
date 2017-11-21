@@ -5,10 +5,10 @@ window.renderStatistics = function (ctx, names, times) {
   ctx.shadowBlur = 2;
   ctx.shadowColor = 'rgba(0, 0, 0, 0.7)';
   ctx.beginPath();
-  ctx.moveTo(310,10);
-  ctx.quadraticCurveTo(40,-10,100,145);
-  ctx.quadraticCurveTo(40,290,310,280);
-  ctx.quadraticCurveTo(590,290,520,145);
+  ctx.moveTo(310, 10);
+  ctx.quadraticCurveTo(40, -10, 100, 145);
+  ctx.quadraticCurveTo(40, 290, 310, 280);
+  ctx.quadraticCurveTo(590, 290, 520, 145);
   ctx.quadraticCurveTo(590,-10,310,10);
   ctx.stroke();
   ctx.fillStyle = "#fff";
