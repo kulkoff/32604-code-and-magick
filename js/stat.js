@@ -24,7 +24,7 @@ window.renderStatistics = function (ctx, names, times) {
 
   var max = -1;
 
-  for(var i = 0 ; i < times.length; i++) {
+  for (var i = 0; i < times.length; i++) {
     var time = times[i];
     if (time > max) {
       max = time;
@@ -40,7 +40,7 @@ window.renderStatistics = function (ctx, names, times) {
   var initialY = 255;
   var lineHeight = 15;
 
-  for(var j = 0; j < times.length; j++) {
+  for (var j = 0; j < times.length; j++) {
     if (names[j] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
       ctx.fillRect(initialX + (indent + barWidth) * j, initialY, barWidth, -times[j] * step);
